@@ -124,13 +124,13 @@ const Sidebar = () => (
         <li>
           <TextContact>
             <i className="fa fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/caioalexandrebr/" target="_blank">/caioalexandrebr</a>
+            <a href="https://www.linkedin.com/in/caioalexandrebr/" target="_blank" rel="noopener noreferrer">/caioalexandrebr</a>
           </TextContact>
         </li>
         <li>
           <TextContact>
             <i className="fa fa-github"></i>
-            <a href="https://github.com/caioalexandrebr" target="_blank">/caioalexandrebr</a>
+            <a href="https://github.com/caioalexandrebr" target="_blank" rel="noopener noreferrer">/caioalexandrebr</a>
           </TextContact>
         </li>
       </Group>

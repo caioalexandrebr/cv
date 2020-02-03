@@ -1,6 +1,6 @@
 import React from 'react';
-import Curriculo from './components/Curriculo/Curriculo'
-import { ThemeProvider, Container, Row, Col } from '@gympass/yoga';
+import Curriculum from './pages/Curriculum/Curriculum';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,15 +36,7 @@ const App = () => (
 
     <Switch>
       <Route exact path="/cv">
-        <ThemeProvider>
-          <Container fluid>
-            <Row>
-              <Col md-start={4} md={6}>
-                <Curriculo/>
-              </Col>
-            </Row>
-          </Container>
-        </ThemeProvider>
+        <Curriculum/>
       </Route>
       <Route path="/about" component={About}/>
       <Route path="/users" component={Users}/>

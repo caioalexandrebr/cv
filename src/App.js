@@ -6,7 +6,7 @@ const App = () => (
   <ThemeProvider>
     <Container fluid>
       <Row>
-        <Col md-start={3} md={8}>
+        <Col md-start={4} md={6}>
           <Curriculo/>
         </Col>
       </Row>

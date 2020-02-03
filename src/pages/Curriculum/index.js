@@ -3,8 +3,8 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import Sidebar from '../../components/Sidebar/Sidebar';
-import Experience from '../../components/Experience/Experience';
+import Sidebar from '../../components/Sidebar';
+import Experience from '../../components/Experience';
 import { ThemeProvider, Container, Row, Col, Text } from '@gympass/yoga';
 
 import Gympass from '../../gympass.png';

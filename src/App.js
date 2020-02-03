@@ -1,5 +1,5 @@
 import React from 'react';
-import Curriculum from './pages/Curriculum/Curriculum';
+import Curriculum from './pages/Curriculum';
 
 import {
   BrowserRouter as Router,
@@ -35,9 +35,8 @@ const App = () => (
     </div>
 
     <Switch>
-      <Route exact path="/cv">
-        <Curriculum/>
-      </Route>
+      <Route exact path="/" component={Curriculum}/>
+      <Route path="/cv" component={Curriculum}/>
       <Route path="/about" component={About}/>
       <Route path="/users" component={Users}/>
     </Switch>

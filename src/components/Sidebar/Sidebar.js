@@ -14,7 +14,7 @@ const SidebarWrapper = styled.div`
 `;
 
 const ContainerSidebar = styled.div`
-  padding: 30px;
+  padding: 15px;
   
   &.background-dark {
     background: rgba(0, 0, 0, 0.2);
@@ -48,6 +48,25 @@ const Role = styled.span`
   color: rgba(255, 255, 255, 0.6);
 `;
 
+const Group = styled.ul`
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+`;
+
+const TextContact = styled(Text)`
+  color: white;
+  font-size: 14px;
+`;
+
 const Sidebar = () => (
   <SidebarWrapper>
     <ContainerSidebar className="background-dark">
@@ -56,11 +75,28 @@ const Sidebar = () => (
       <Role>Front-end Developer</Role>
     </ContainerSidebar>
     <ContainerSidebar>
-
-    <Text>
-      caioalexandre.br@gmail.com
-      +55 (11) 98200-4537
-    </Text>
+      <Group>
+        <li>
+          <TextContact>
+            <i class="fa fa-envelope"></i> caioalexandre.br@gmail.com
+          </TextContact>
+        </li>
+        <li>
+          <TextContact>
+            <i class="fa fa-phone"></i> +55 (11) 98200-4537
+          </TextContact>
+        </li>
+        <li>
+          <TextContact>
+            <i className="fa fa-linkedin"></i> /caioalexandrebr
+          </TextContact>
+        </li>
+        <li>
+          <TextContact>
+            <i class="fa fa-github"></i> /caioalexandrebr
+          </TextContact>
+        </li>
+      </Group>
     </ContainerSidebar>
   </SidebarWrapper>
 );

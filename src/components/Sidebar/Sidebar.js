@@ -20,6 +20,25 @@ const ContainerSidebar = styled.div`
   &.background-dark {
     background: rgba(0, 0, 0, 0.2);
   }
+  
+  .block {
+    display: block;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-weight: bold;
+  }
+
+  .placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
 `;
   
 const Profile = styled.div`
@@ -115,6 +134,21 @@ const Sidebar = () => (
           </TextContact>
         </li>
       </Group>
+    </ContainerSidebar>
+    <ContainerSidebar>
+      <span className="title block">EDUCATION</span>
+      <span className="subtitle block">UNINASSAU</span>
+      <span>BSc in Information System</span>
+      <span className="placeholder block">2017 - 2019</span>
+    </ContainerSidebar>
+    <ContainerSidebar>
+      <span className="title block">LANGUAGES</span>
+      <div>
+        <span>Portuguese</span><span className="placeholder">(Native)</span>
+      </div>
+      <div>
+        <span>English</span><span className="placeholder">(Basic)</span>
+      </div>
     </ContainerSidebar>
   </SidebarWrapper>
 );

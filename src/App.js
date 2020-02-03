@@ -22,7 +22,7 @@ const App = () => (
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/cv">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -35,7 +35,7 @@ const App = () => (
     </div>
 
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/cv">
         <ThemeProvider>
           <Container fluid>
             <Row>

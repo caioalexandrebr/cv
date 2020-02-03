@@ -111,13 +111,13 @@ const Sidebar = () => (
       <Group>
         <li>
           <TextContact>
-            <i class="fa fa-envelope"></i>
+            <i className="fa fa-envelope"></i>
             <a href="mailto: caioalexandre.br@gmail.com">caioalexandre.br@gmail.com</a>
           </TextContact>
         </li>
         <li>
           <TextContact>
-            <i class="fa fa-phone"></i>
+            <i className="fa fa-phone"></i>
             <a href="tel:+5511982004537">+55 (11) 98200-4537</a>
           </TextContact>
         </li>
@@ -129,7 +129,7 @@ const Sidebar = () => (
         </li>
         <li>
           <TextContact>
-            <i class="fa fa-github"></i>
+            <i className="fa fa-github"></i>
             <a href="https://github.com/caioalexandrebr" target="_blank">/caioalexandrebr</a>
           </TextContact>
         </li>

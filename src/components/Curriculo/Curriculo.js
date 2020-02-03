@@ -4,6 +4,11 @@ import Sidebar from '../Sidebar/Sidebar';
 import Experience from '../Experience/Experience';
 import styled from 'styled-components';
 
+import Gympass from '../../gympass.png';
+import Accenture from '../../accenture.jpeg';
+import Workana from '../../workana.jpeg';
+import Cartello from '../../cartello.jpeg';
+
 const Page = styled.div`
   background: #fff;
   padding: 60px;
@@ -38,32 +43,56 @@ const SectionTitle = styled.h2`
   }
 `;
 
+const SectionProfile = styled.div`
+  margin-bottom: 20px;
+`;
+
 const Curriculo = () => (
   <Page>
     <Sidebar/>
-    <SectionTitle>
-      <i className="fa fa-user"></i>
-      CAREER PROFILE
-    </SectionTitle>
-    <Text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.
-    </Text>
+    <SectionProfile>
+      <SectionTitle>
+        <i className="fa fa-user"></i>
+        CAREER PROFILE
+      </SectionTitle>
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.
+      </Text>
+    </SectionProfile>
     <SectionTitle>
       <i className="fa fa-briefcase"></i>
       EXPERIENCES
     </SectionTitle>
     <Experience
+      image={Gympass}
       title={'Front-end Developer'} 
-      period={'Gympass Tempo integral'} 
+      period={'Gympass ⋅ Tempo integral'} 
       time={'dez de 2019 – o momento'} 
       region={'São Paulo, Brazil'} 
       description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
     />
     <Experience
+      image={Accenture}
       title={'Front-end Developer'} 
-      period={'Gympass Tempo integral'} 
-      time={'dez de 2019 – o momento'} 
-      region={'São Paulo, Brazil'} 
+      period={'Accenture ⋅ Tempo integral'} 
+      time={'mar de 2018 – dez de 2019 ⋅ 1 ano 10 meses'} 
+      region={'Recife, Brazil'} 
+      description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+    />
+    <Experience
+      image={Workana}
+      title={'Front-end Developer'} 
+      period={'Workana ⋅ Freelance'} 
+      time={'mar de 2018 – dez de 2019 ⋅ 1 ano 10 meses'} 
+      region={'Home Office'} 
+      description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+    />
+    <Experience
+      image={Cartello}
+      title={'Front-end Developer'} 
+      period={'Cartello ⋅ Estágio'} 
+      time={'out de 2017 – mar de 2018 ⋅ 6 meses'} 
+      region={'Recife, Brazil'} 
       description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
     />
   </Page>

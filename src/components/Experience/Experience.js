@@ -36,7 +36,7 @@ const Title = styled.h3`
 const Experience = (props) => (
   <ExperienceWrapper>
     <Logo>
-      <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHqufqYpsbeXA/company-logo_100_100/0?e=1588809600&amp;v=beta&amp;t=QZv2RIlb7zSRa5OIJQHxts3LRv9p-rMgv8JBDiBxsts" alt="Gympass"></img>
+      <img src={props.image} alt="Gympass"></img>
     </Logo>
     <Info>
       <Title>{props.title}</Title>

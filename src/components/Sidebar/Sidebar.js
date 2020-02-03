@@ -7,7 +7,7 @@ const SidebarWrapper = styled.div`
   top: 0;
   right: 0;
   color: white;
-  width: 240px;
+  width: 260px;
   height: 100%;
   min-height: 800px;
   position: absolute;
@@ -26,7 +26,6 @@ const Profile = styled.div`
   width: 125px;
   height: 125px;
   margin: 0 auto;
-  background: white;
   text-align: center;
   margin-bottom: 10px;
   
@@ -71,6 +70,13 @@ const Group = styled.ul`
 const TextContact = styled(Text)`
   color: white;
   font-size: 14px;
+
+  a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  }
 `;
 
 const Sidebar = () => (
@@ -86,22 +92,26 @@ const Sidebar = () => (
       <Group>
         <li>
           <TextContact>
-            <i class="fa fa-envelope"></i> caioalexandre.br@gmail.com
+            <i class="fa fa-envelope"></i>
+            <a href="mailto: caioalexandre.br@gmail.com">caioalexandre.br@gmail.com</a>
           </TextContact>
         </li>
         <li>
           <TextContact>
-            <i class="fa fa-phone"></i> +55 (11) 98200-4537
+            <i class="fa fa-phone"></i>
+            <a href="tel:+5511982004537">+55 (11) 98200-4537</a>
           </TextContact>
         </li>
         <li>
           <TextContact>
-            <i className="fa fa-linkedin"></i> /caioalexandrebr
+            <i className="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/caioalexandrebr/" target="_blank">/caioalexandrebr</a>
           </TextContact>
         </li>
         <li>
           <TextContact>
-            <i class="fa fa-github"></i> /caioalexandrebr
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/caioalexandrebr" target="_blank">/caioalexandrebr</a>
           </TextContact>
         </li>
       </Group>

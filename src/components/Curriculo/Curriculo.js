@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from '@gympass/yoga';
 import Sidebar from '../Sidebar/Sidebar';
+import Experience from '../Experience/Experience';
 import styled from 'styled-components';
 
 const Page = styled.div`
@@ -24,10 +25,13 @@ const SectionTitle = styled.h2`
   .fa {
     left: 0;
     top: -1px;
+    width: 30px;
+    height: 23px;
     color: white;
     font-size: 16px;
-    padding: 7px 9px;
+    padding-top: 7px;
     margin-right: 8px;
+    text-align: center;
     position: absolute;
     background: #F46152;
     border-radius: 500px;
@@ -38,12 +42,30 @@ const Curriculo = () => (
   <Page>
     <Sidebar/>
     <SectionTitle>
-      <i class="fa fa-user"></i>
+      <i className="fa fa-user"></i>
       CAREER PROFILE
     </SectionTitle>
     <Text>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.
     </Text>
+    <SectionTitle>
+      <i className="fa fa-briefcase"></i>
+      EXPERIENCES
+    </SectionTitle>
+    <Experience
+      title={'Front-end Developer'} 
+      period={'Gympass Tempo integral'} 
+      time={'dez de 2019 – o momento'} 
+      region={'São Paulo, Brazil'} 
+      description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+    />
+    <Experience
+      title={'Front-end Developer'} 
+      period={'Gympass Tempo integral'} 
+      time={'dez de 2019 – o momento'} 
+      region={'São Paulo, Brazil'} 
+      description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+    />
   </Page>
 );
 

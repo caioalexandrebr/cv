@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from '@gympass/yoga';
 import styled from 'styled-components';
+import Perfil from '../../perfil.png';
 
 const SidebarWrapper = styled.div`
   top: 0;
@@ -28,7 +29,12 @@ const Profile = styled.div`
   background: white;
   text-align: center;
   margin-bottom: 10px;
-  border-radius: 500px;
+  
+  img {
+    margin: 0;
+    width: 100%;
+    border-radius: 500px;
+  }
 `;
   
 const Name = styled.span`
@@ -70,7 +76,9 @@ const TextContact = styled(Text)`
 const Sidebar = () => (
   <SidebarWrapper>
     <ContainerSidebar className="background-dark">
-      <Profile/>
+      <Profile>
+        <img src={Perfil} alt="Logo" />
+      </Profile>
       <Name>Caio Alexandre</Name>
       <Role>Front-end Developer</Role>
     </ContainerSidebar>

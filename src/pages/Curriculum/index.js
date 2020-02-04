@@ -16,8 +16,6 @@ const Page = styled.div`
   background: #fff;
   padding: 60px;
   min-height: 100vh;
-  position: relative;
-  padding-right: 300px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
@@ -54,9 +52,9 @@ const Curriculum = () => (
   <ThemeProvider>
     <Container fluid>
       <Row>
-        <Col md-start={4} md={6}>
+        <Sidebar/>
+        <Col lg={6} md={12} sm={12} xs={12} xxs={12}>
           <Page>
-            <Sidebar/>
             <SectionProfile>
               <SectionTitle>
                 <i className="fa fa-user"></i>

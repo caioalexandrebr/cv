@@ -1,17 +1,12 @@
 import React from 'react';
-import { Text } from '@gympass/yoga';
+import { Col, Text } from '@gympass/yoga';
 import styled from 'styled-components';
 import Perfil from '../../perfil.png';
 
-const SidebarWrapper = styled.div`
-  top: 0;
-  right: 0;
+const SidebarWrapper = styled(Col)`
   color: white;
-  width: 260px;
-  height: 100%;
-  min-height: 800px;
-  position: absolute;
   background: #F46152;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 `;
 
 const ContainerSidebar = styled.div`
@@ -99,7 +94,7 @@ const TextContact = styled(Text)`
 `;
 
 const Sidebar = () => (
-  <SidebarWrapper>
+  <SidebarWrapper lg-start={3} lg={2} md={12} sm={12} xs={12} xxs={12}>
     <ContainerSidebar className="background-dark">
       <Profile>
         <img src={Perfil} alt="Logo" />

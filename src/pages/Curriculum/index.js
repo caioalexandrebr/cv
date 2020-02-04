@@ -13,9 +13,8 @@ import Accenture from '../../accenture.jpeg';
 import Workana from '../../workana.jpeg';
 import Cartello from '../../cartello.jpeg';
 
-const Page = styled(Col)`
+const Page = styled(Container)`
   background: #fff;
-  min-height: 100vh;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
@@ -29,15 +28,15 @@ const SectionProfile = styled.div`
 
 const Curriculum = () => (
   <ThemeProvider>
-    <Container fluid>
+    <Container>
       <Row>
-        <Page md-start={3} md={8} xxs={12}>
-          <Container fluid>
+        <Col md-start={2} md={10} xxs={12}>
+          <Page fluid>
             <Row>
-              <Col lg={3} xxs={12}>
+              <Col xl={3} lg={5} md={6} xxs={12}>
                 <Sidebar/>
               </Col>
-              <Col lg={9} xxs={12}>
+              <Col xl={9} lg={7} md={6} xxs={12}>
                 <ContentWrapper>
                   <SectionProfile>
                     <SectionTitle icon={'user'} title={'CAREER PROFILE'}/>
@@ -81,8 +80,8 @@ const Curriculum = () => (
                 </ContentWrapper>
               </Col>
             </Row>
-          </Container>
-        </Page>
+          </Page>
+        </Col>
       </Row>
     </Container>
   </ThemeProvider>

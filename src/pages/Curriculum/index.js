@@ -40,9 +40,8 @@ const Curriculum = () => (
                 <ContentWrapper>
                   <SectionProfile>
                     <SectionTitle icon={'user'} title={'CAREER PROFILE'}/>
-                    <Text>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.
-                    </Text>
+                    <Text>Hi, my name is Caio Alexandre, an enthusiastic from web interfaces development area. My successfull journey is directly connected to my main skills as learning, rating, developing innovative solutions and apply applications with the goal of comply with end user expectations with a great quality code and efficiency. I like to work in a collaborative way, helping not only to achieve goals, but also improving the technical and professional knowledge of a team sharing my experience with them.</Text>
+                    <Text>While many people are proud of achieving their goals, my biggest wish is going beyond corporative expectations, creating a successfull scenario to every one around me.</Text>
                   </SectionProfile>
                   <SectionTitle icon={'briefcase'} title={'EXPERIENCES'}/>
                   <Experience
@@ -51,7 +50,7 @@ const Curriculum = () => (
                     period={'Gympass ⋅ Tempo integral'} 
                     time={'dez de 2019 – o momento'} 
                     region={'São Paulo, Brazil'} 
-                    description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+                    description={['-']}
                   />
                   <Experience
                     image={Accenture}
@@ -59,7 +58,7 @@ const Curriculum = () => (
                     period={'Accenture ⋅ Tempo integral'} 
                     time={'mar de 2018 – dez de 2019 ⋅ 1 ano 10 meses'} 
                     region={'Recife, Brazil'} 
-                    description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+                    description={['Acting in a CMS reference team and improving my knowledge developing innovative solutions using, mainly, Content Management Technologies (CMS) as Liferay and Drupal.','I worked depeloping Frontend and Backend applications using some languages and frameworks as JavaScript, jQuery, PHP and FreeMarker.','In projects management processes i oftenly used agile methods, participating from Scrum rituals as daily meetings, retrospective, sprints planning and analysing scope changes impacts.']}
                   />
                   <Experience
                     image={Workana}
@@ -67,7 +66,7 @@ const Curriculum = () => (
                     period={'Workana ⋅ Freelance'} 
                     time={'mar de 2018 – dez de 2019 ⋅ 1 ano 10 meses'} 
                     region={'Home Office'} 
-                    description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+                    description={['I used the tool as a freelancer, with the goal of improve my knowledges in technology area, applying, successfully, innovative solutions, hence producing positive results to many customers. Used agile methods (KanBan) to manage software development through online platforms (Microsoft Azure / Trello) to scope planning, tasks control and obstacles to projects conclusion.']}
                   />
                   <Experience
                     image={Cartello}
@@ -75,7 +74,7 @@ const Curriculum = () => (
                     period={'Cartello ⋅ Estágio'} 
                     time={'out de 2017 – mar de 2018 ⋅ 6 meses'} 
                     region={'Recife, Brazil'} 
-                    description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur non sem in maximus. Donec lacinia non metus nec dignissim. Integer lacinia porta massa, nec malesuada augue. Proin gravida nunc quis massa posuere, et aliquam mi egestas. Donec elementum non mauris non eleifend. Vivamus iaculis est lorem, ut interdum nisl pharetra in. Quisque in sapien dictum, fringilla est vitae, vehicula mauris. Sed molestie lacus vitae auctor semper.'}
+                    description={['Contributing with my knowledge, developing responsive interfaces, using Mobile First concept for WordPress platform, creating a knowledge domain with the often use of some languages as PHP and JavaScript. We used Scrum methods and KanBan as Project management and i participated of important implementantion decisions and analysing risks inside meetings.']}
                   />
                 </ContentWrapper>
               </Col>

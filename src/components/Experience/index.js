@@ -19,11 +19,20 @@ const Logo = styled.div`
 const Info = styled.div`
   padding-left: 80px;
 
+  span {
+    display: block;
+
+    &:not(:first-of-type) {
+      color: rgba(0,0,0,.6);
+    }
+  }
+
   p {
-    margin: 0;
+    margin-top: ;
+    margin-bottom: 15px;
 
     &:last-child {
-      margin-top: 15px;
+      margin-bottom: 0;
     }
   }
 `;
@@ -40,10 +49,10 @@ const Experience = (props) => (
     </Logo>
     <Info>
       <Title>{props.title}</Title>
-      <p>{props.period}</p>
-      <p>{props.time}</p>
-      <p>{props.region}</p>
-      <p>{props.description}</p>
+      <span>{props.period}</span>
+      <span>{props.time}</span>
+      <span>{props.region}</span>
+      {props.description.map(p => <p>{p}</p>)}
     </Info>
   </ExperienceWrapper>
 );

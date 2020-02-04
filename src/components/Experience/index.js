@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Text } from '@gympass/yoga';
 
 const ExperienceWrapper = styled.div`
   margin-bottom: 30px;
@@ -26,15 +27,11 @@ const Info = styled.div`
       color: rgba(0,0,0,.6);
     }
   }
+`;
 
-  p {
-    margin-top: ;
-    margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+const TextExperience = styled(Text)`
+  font-size: 14px;
+  margin-top: 15px;
 `;
 
 const Title = styled.h3`
@@ -52,7 +49,7 @@ const Experience = (props) => (
       <span>{props.period}</span>
       <span>{props.time}</span>
       <span>{props.region}</span>
-      {props.description.map(p => <p>{p}</p>)}
+      {props.description.map(p => <TextExperience>{p}</TextExperience>)}
     </Info>
   </ExperienceWrapper>
 );

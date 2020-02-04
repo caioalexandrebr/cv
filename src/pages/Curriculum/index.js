@@ -18,6 +18,14 @@ const Page = styled(Container)`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
+const TextCareer = styled(Text)`
+  font-size: 14px;
+  
+  :not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+`;
+
 const ContentWrapper = styled.div`
   padding: 60px 30px;
 `;
@@ -40,8 +48,8 @@ const Curriculum = () => (
                 <ContentWrapper>
                   <SectionProfile>
                     <SectionTitle icon={'user'} title={'CAREER PROFILE'}/>
-                    <Text>Hi, my name is Caio Alexandre, an enthusiastic from web interfaces development area. My successfull journey is directly connected to my main skills as learning, rating, developing innovative solutions and apply applications with the goal of comply with end user expectations with a great quality code and efficiency. I like to work in a collaborative way, helping not only to achieve goals, but also improving the technical and professional knowledge of a team sharing my experience with them.</Text>
-                    <Text>While many people are proud of achieving their goals, my biggest wish is going beyond corporative expectations, creating a successfull scenario to every one around me.</Text>
+                    <TextCareer>Hi, my name is Caio Alexandre, an enthusiastic from web interfaces development area. My successfull journey is directly connected to my main skills as learning, rating, developing innovative solutions and apply applications with the goal of comply with end user expectations with a great quality code and efficiency. I like to work in a collaborative way, helping not only to achieve goals, but also improving the technical and professional knowledge of a team sharing my experience with them.</TextCareer>
+                    <TextCareer>While many people are proud of achieving their goals, my biggest wish is going beyond corporative expectations, creating a successfull scenario to every one around me.</TextCareer>
                   </SectionProfile>
                   <SectionTitle icon={'briefcase'} title={'EXPERIENCES'}/>
                   <Experience
@@ -50,7 +58,7 @@ const Curriculum = () => (
                     period={'Gympass ⋅ Tempo integral'} 
                     time={'dez de 2019 – o momento'} 
                     region={'São Paulo, Brazil'} 
-                    description={['-']}
+                    description={[]}
                   />
                   <Experience
                     image={Accenture}

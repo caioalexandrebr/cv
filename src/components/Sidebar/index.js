@@ -13,7 +13,8 @@ const SidebarWrapper = styled.div`
 const ContainerSidebar = styled.div`
   padding: 15px;
   
-  &.background-dark {
+  &.profile {
+    padding: 40px 0;
     background: rgba(0, 0, 0, 0.2);
   }
   
@@ -51,16 +52,16 @@ const Profile = styled.div`
   }
 `;
   
-const Name = styled.span`
-  margin-top: 0;
+const Name = styled.h1`
+  margin: 10px 0;
   display: block;
   font-size: 32px;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 10px;
 `;
 
-const Role = styled.span`
+const Role = styled.h2`
+  margin: 0;
   display: block;
   font-size: 16px;
   font-weight: 400;
@@ -97,7 +98,7 @@ const TextContact = styled(Text)`
 const Sidebar = () => (
 
   <SidebarWrapper>
-    <ContainerSidebar className="background-dark">
+    <ContainerSidebar className="profile">
       <Profile>
         <img src={Perfil} alt="Logo" />
       </Profile>

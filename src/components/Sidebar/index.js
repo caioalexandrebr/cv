@@ -1,10 +1,11 @@
 import React from 'react';
-import { Col, Text } from '@gympass/yoga';
+import { Text } from '@gympass/yoga';
 import styled from 'styled-components';
 import Perfil from '../../perfil.png';
 
-const SidebarWrapper = styled(Col)`
+const SidebarWrapper = styled.div`
   color: white;
+  height: 100%;
   background: #F46152;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 `;
@@ -94,7 +95,8 @@ const TextContact = styled(Text)`
 `;
 
 const Sidebar = () => (
-  <SidebarWrapper lg-start={3} lg={2} md={12} sm={12} xs={12} xxs={12}>
+
+  <SidebarWrapper>
     <ContainerSidebar className="background-dark">
       <Profile>
         <img src={Perfil} alt="Logo" />

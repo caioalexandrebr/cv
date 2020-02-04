@@ -39,17 +39,17 @@ const Title = styled.h3`
   font-weight: bold;
 `;
 
-const Experience = (props) => (
+const Experience = ({ description, image, ...props }) => (
   <ExperienceWrapper>
     <Logo>
-      <img src={props.image} alt="Gympass"></img>
+      <img src={image} alt="Gympass"></img>
     </Logo>
     <Info>
       <Title>{props.title}</Title>
       <span>{props.period}</span>
       <span>{props.time}</span>
       <span>{props.region}</span>
-      {props.description.map(p => <TextExperience>{p}</TextExperience>)}
+      {description && description.map(p => <TextExperience>{p}</TextExperience>)}
     </Info>
   </ExperienceWrapper>
 );

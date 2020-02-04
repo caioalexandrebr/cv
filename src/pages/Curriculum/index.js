@@ -57,8 +57,7 @@ const Curriculum = () => (
                     title={'Front-end Developer'} 
                     period={'Gympass ⋅ Full-time'} 
                     time={'dec de 2019 – the moment'} 
-                    region={'São Paulo, Brazil'} 
-                    description={[]}
+                    region={'São Paulo, Brazil'}
                   />
                   <Experience
                     image={Accenture}

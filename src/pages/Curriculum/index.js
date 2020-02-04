@@ -20,7 +20,7 @@ const Page = styled(Container)`
 
 const TextCareer = styled(Text)`
   font-size: 14px;
-  
+
   :not(:last-of-type) {
     margin-bottom: 15px;
   }
@@ -55,16 +55,16 @@ const Curriculum = () => (
                   <Experience
                     image={Gympass}
                     title={'Front-end Developer'} 
-                    period={'Gympass ⋅ Tempo integral'} 
-                    time={'dez de 2019 – o momento'} 
+                    period={'Gympass ⋅ Full-time'} 
+                    time={'dec de 2019 – the moment'} 
                     region={'São Paulo, Brazil'} 
                     description={[]}
                   />
                   <Experience
                     image={Accenture}
                     title={'Front-end Developer'} 
-                    period={'Accenture ⋅ Tempo integral'} 
-                    time={'mar de 2018 – dez de 2019 ⋅ 1 ano 10 meses'} 
+                    period={'Accenture ⋅ Full-time'} 
+                    time={'mar de 2018 – dec de 2019 ⋅ 1 year 10 months'} 
                     region={'Recife, Brazil'} 
                     description={['Acting in a CMS reference team and improving my knowledge developing innovative solutions using, mainly, Content Management Technologies (CMS) as Liferay and Drupal.','I worked depeloping Frontend and Backend applications using some languages and frameworks as JavaScript, jQuery, PHP and FreeMarker.','In projects management processes i oftenly used agile methods, participating from Scrum rituals as daily meetings, retrospective, sprints planning and analysing scope changes impacts.']}
                   />
@@ -72,7 +72,7 @@ const Curriculum = () => (
                     image={Workana}
                     title={'Front-end Developer'} 
                     period={'Workana ⋅ Freelance'} 
-                    time={'mar de 2018 – dez de 2019 ⋅ 1 ano 10 meses'} 
+                    time={'mar de 2018 – dec de 2019 ⋅ 1 year 10 months'} 
                     region={'Home Office'} 
                     description={['I used the tool as a freelancer, with the goal of improve my knowledges in technology area, applying, successfully, innovative solutions, hence producing positive results to many customers. Used agile methods (KanBan) to manage software development through online platforms (Microsoft Azure / Trello) to scope planning, tasks control and obstacles to projects conclusion.']}
                   />
@@ -80,7 +80,7 @@ const Curriculum = () => (
                     image={Cartello}
                     title={'Front-end Developer'} 
                     period={'Cartello ⋅ Estágio'} 
-                    time={'out de 2017 – mar de 2018 ⋅ 6 meses'} 
+                    time={'oct de 2017 – mar de 2018 ⋅ 6 months'} 
                     region={'Recife, Brazil'} 
                     description={['Contributing with my knowledge, developing responsive interfaces, using Mobile First concept for WordPress platform, creating a knowledge domain with the often use of some languages as PHP and JavaScript. We used Scrum methods and KanBan as Project management and i participated of important implementantion decisions and analysing risks inside meetings.']}
                   />

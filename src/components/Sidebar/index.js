@@ -142,10 +142,10 @@ const Sidebar = () => (
     <ContainerSidebar>
       <span className="title block">LANGUAGES</span>
       <div>
-        <span>Portuguese</span><span className="placeholder">(Native)</span>
+        <span>Portuguese </span><span className="placeholder">(Native)</span>
       </div>
       <div>
-        <span>English</span><span className="placeholder">(Basic)</span>
+        <span>English </span><span className="placeholder">(Basic)</span>
       </div>
     </ContainerSidebar>
   </SidebarWrapper>

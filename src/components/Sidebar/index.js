@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '@gympass/yoga';
 import styled from 'styled-components';
+import IconLink from '../IconLink';
 import Perfil from '../../perfil.png';
 
 const SidebarWrapper = styled.div`
@@ -83,18 +83,6 @@ const Group = styled.ul`
   }
 `;
 
-const TextContact = styled(Text)`
-  color: white;
-  font-size: 14px;
-
-  a {
-    color: white;
-    margin-left: 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
-  }
-`;
-
 const Sidebar = () => (
 
   <SidebarWrapper>
@@ -108,28 +96,16 @@ const Sidebar = () => (
     <ContainerSidebar>
       <Group>
         <li>
-          <TextContact>
-            <i className="fa fa-envelope"></i>
-            <a href="mailto: caioalexandre.br@gmail.com">caioalexandre.br@gmail.com</a>
-          </TextContact>
+          <IconLink icon={'envelope'} text={'caioalexandre.br@gmail.com'} url={'mailto: caioalexandre.br@gmail.com'}/>
         </li>
         <li>
-          <TextContact>
-            <i className="fa fa-phone"></i>
-            <a href="tel:+5511982004537">+55 (11) 98200-4537</a>
-          </TextContact>
+          <IconLink icon={'phone'} text={'+55 (11) 9 8200-4537'} url={'tel:+5511982004537'}/>
         </li>
         <li>
-          <TextContact>
-            <i className="fa fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/caioalexandrebr/" target="_blank" rel="noopener noreferrer">/caioalexandrebr</a>
-          </TextContact>
+          <IconLink icon={'linkedin'} text={'/in/caioalexandrebr'} url={'https://www.linkedin.com/in/caioalexandrebr/'}/>
         </li>
         <li>
-          <TextContact>
-            <i className="fa fa-github"></i>
-            <a href="https://github.com/caioalexandrebr" target="_blank" rel="noopener noreferrer">/caioalexandrebr</a>
-          </TextContact>
+          <IconLink icon={'github'} text={'/caioalexandrebr'} url={'https://github.com/caioalexandrebr/'}/>
         </li>
       </Group>
     </ContainerSidebar>

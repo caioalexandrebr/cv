@@ -79,7 +79,7 @@ const Curriculum = () => (
                   <Experience
                     image={Cartello}
                     title={'Front-end Developer'} 
-                    period={'Cartello ⋅ Estágio'} 
+                    period={'Cartello ⋅ Internship'} 
                     time={'oct de 2017 – mar de 2018 ⋅ 6 months'} 
                     region={'Recife, Brazil'} 
                     description={['Contributing with my knowledge, developing responsive interfaces, using Mobile First concept for WordPress platform, creating a knowledge domain with the often use of some languages as PHP and JavaScript. We used Scrum methods and KanBan as Project management and i participated of important implementantion decisions and analysing risks inside meetings.']}

@@ -14,7 +14,8 @@ import Workana from '../../workana.jpeg';
 import Cartello from '../../cartello.jpeg';
 
 const Page = styled(Container)`
-  background: #fff;
+  margin: 20px 0;
+  background: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
